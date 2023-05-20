@@ -8,9 +8,9 @@ const state = ref(false);
 </script>
 
 <template>
-<div id="Header">
+<div class="Header">
     <div class="logo">
-        <img class="logoPanda" src="../assets/LogoMyDigitalStartUp 3.svg" alt="">
+        <img class="logoPanda" src="../assets/LogoMyDigitalStartUp3.svg" alt="">
     </div>
     <!-- menu mobile -->
     <div class="burger" @click="state = !state" :class="{'burger-open' : state}" >
@@ -39,37 +39,35 @@ const state = ref(false);
 </div>
 </template>
 
-<style scoped>
-#Header{
+<style scoped >
+.Header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #D2EDD3;
     padding: 20px;
 }
-#Header .logoPanda{
+.Header .logoPanda{
     height: 15vh;
-    padding-left: 150px;
 }
-#Header .Icon{
+.Header .Icon{
 height: 5vh;
 padding-right: 400px;
 
 
 }
-#Header .burger .trait{
+.Header .burger .trait{
     height: 3px;
     width: 23px;
     background: #000;
     margin-bottom: 3px;
 }
-#Header .nav--icon{
+.Header .nav--icon{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 100px;
+    align-items: flex-end;
+    justify-content: end;
 }
-#Header .menu--burger{
+.Header .menu--burger{
     height: 100vh;
     width: 100%;
     left: 100%;
@@ -77,34 +75,34 @@ padding-right: 400px;
     position:fixed ;
     transition: 0.3s;
 }
-#Header .open{
+.Header .open{
     left: 0%;
 }
-#Header .burger-open{
+.Header .burger-open{
     z-index: 2;
     background: #D2EDD3;
  }
-#Header .links{
+.Header .links{
     display: none;
 }
 
 
 
 @media screen and (min-width: 700px){
-   #Header .burger 
-    ,#Header .menu--burger {
+   .Header .burger 
+    ,.Header .menu--burger {
         display: none;
     }
    
 }
 @media screen and (max-width: 700px){
-   #Header .Icon{
+   .Header .Icon{
     display: none;
    }
-    #Header .logoPanda{
+    .Header .logoPanda{
         display: none;
     }
-    #Header  .nav--icon{
+    .Header  .nav--icon{
         display: none;
     }
 }
