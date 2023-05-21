@@ -12,7 +12,7 @@ const state = ref(false);
     <div class="logo">
         <img class="logoPanda" src="../assets/LogoMyDigitalStartUp3.svg" alt="">
     </div>
-    <!-- menu mobile -->
+    <!-- menu mobile
     <div class="burger" @click="state = !state" :class="{'burger-open' : state}" >
         <div class="trait"></div>
         <div class="trait"></div>
@@ -20,7 +20,7 @@ const state = ref(false);
     </div>
     <div class="menu--burger" :class="{'open' : state}"  >
     
-    </div>
+    </div> -->
     <!-- menu mobile -->
 
     <!-- menu dekstop -->
@@ -48,20 +48,20 @@ const state = ref(false);
     padding: 20px;
 }
 .Header .logoPanda{
-    height: 15vh;
+    height: 10vh;
 }
 .Header .Icon{
-height: 5vh;
-padding-right: 400px;
+/* height: 5vh; */
+padding-right: 100px;
 
 
 }
-.Header .burger .trait{
+/* .Header .burger .trait{
     height: 3px;
     width: 23px;
     background: #000;
     margin-bottom: 3px;
-}
+} */
 .Header .nav--icon{
     display: flex;
     align-items: flex-end;
@@ -89,14 +89,14 @@ padding-right: 400px;
 
 
 @media screen and (min-width: 700px){
-   .Header .burger 
-    ,.Header .menu--burger {
+   /* .Header .burger  */
+    /* ,.Header .menu--burger {
         display: none;
     }
-   
+    */
 }
 @media screen and (max-width: 700px){
-   .Header .Icon{
+   /* .Header .Icon{
     display: none;
    }
     .Header .logoPanda{
@@ -104,6 +104,6 @@ padding-right: 400px;
     }
     .Header  .nav--icon{
         display: none;
-    }
+    } */
 }
 </style>

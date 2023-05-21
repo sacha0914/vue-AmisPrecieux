@@ -9,9 +9,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
 import { faShoppingCart, faUser, faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
-library.add(faUserSecret, faShoppingCart, faUser)
+library.add(faUserSecret, faShoppingCart, faUser,faInstagram)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)

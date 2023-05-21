@@ -7,8 +7,9 @@ import { ref } from 'vue';
     <div id="Home">
         <div class="AmisPrecieux">
             <div class="Discover">
-                <h1 class="AmisTitle">Amis Précieux </h1>
-                <p>Une gamme de peluches respectueuses de l’environnement et luttant contre la protection animal !</p>
+                <p class="Welcome" style="margin: 0px; font-size: 16px;">Bienvenue chez</p>
+                <h1 style="margin: 0px;" class="AmisTitle">Amis Précieux </h1>
+                <h2>Une gamme de peluches respectueuses de l’environnement et luttant contre la protection animale !</h2>
                 <button class="Decouvrir" role="button">Découvrir </button>
             </div>
             <div class="Logo">
@@ -17,13 +18,13 @@ import { ref } from 'vue';
             </div>
         </div>
         <div class="Separation">
-            <img class="Line" src="../assets/Line-Dash.svg" alt="">
+            <img class="Line" src="../assets/LineDash.svg" alt="">
         </div>
         <div class="Why">
             <h2>Pourquoi choisir Amis Précieux ?</h2>
             <Div class="OnBlock">
                 <div class="Block">
-                    <img src="../assets/HeroImageSpot.svg" alt="">
+                    <img class="WhyImg" src="../assets/HeroImageSpot.svg" alt="">
                     <div class="TextInBlock">
                         <H3>Jeux Intéractifs</H3>
                         <p class="TextInBlockP">Chaque peluche est fourni avec un QR Code donnant accès à une large
@@ -31,24 +32,26 @@ import { ref } from 'vue';
                     </div>
                 </div>
                 <div class="Block">
-                    <img src="../assets/HeroImageSpot.svg" alt="">
+                    <img class="WhyImg" src="../assets/HeroImageSpot.svg" alt="">
                     <div class="TextInBlock">
                         <H3>Protection Animal</H3>
-                        <p class="TextInBlockP">Une partie de vos dépenses seront reversés à des associations de lutte pour la protection animal</p>
+                        <p class="TextInBlockP">Une partie de vos dépenses seront reversés à des associations de lutte pour
+                            la protection animal</p>
                     </div>
 
                 </div>
             </Div>
             <Div class="OnBlock">
                 <div class="Block">
-                    <img src="../assets/HeroImageSpot.svg" alt="">
+                    <img class="WhyImg" src="../assets/HeroImageSpot.svg" alt="">
                     <div class="TextInBlock">
                         <H3>Made in France</H3>
-                        <p class="TextInBlockP">Nous nous engageons à offrir des produits de qualité respectueux de l’environnement et les animaux !</p>
+                        <p class="TextInBlockP">Nous nous engageons à offrir des produits de qualité respectueux de
+                            l’environnement et les animaux !</p>
                     </div>
                 </div>
                 <div class="Block">
-                    <img src="../assets/HeroImageSpot.svg" alt="">
+                    <img class="WhyImg" src="../assets/HeroImageSpot.svg" alt="">
                     <div class="TextInBlock">
                         <H3>Unisexe</H3>
                         <p class="TextInBlockP">Toutes nos peluches sont unisexes !</p>
@@ -58,19 +61,60 @@ import { ref } from 'vue';
             </Div>
         </div>
         <div class="Collection">
-<img src="../assets/FondAcheter.svg" alt="">
+            <img class="FondCarrousel" src="../assets/FondAcheter.svg" alt="">
+            <img class="Carrousel" src="../assets/Collection.svg" alt="">
+        </div>
+        <H3>Des peluches saines pour votre enfant</H3>
+        <div class="Separation">
+            <img class="LineBot" src="../assets/LineDash.svg" alt="">
+        </div>
+        <div class="BlockUnDeux">
+            <div class="UnDeux">
+                <p class="Number" style="font-size: 60px; position: absolute;">1</p>
+                <img style="margin-top: 40px;" class="RondEco" src="../assets/RondEco.svg" alt="">
+                <img class="TraitVert" src="../assets/traitVert.svg" alt="">
+                <h4>Écologique</h4>
+                <p style="text-align:  center;">Notre combat ? Fabriquer des peluches Made In France respectueuse de
+                    l’environnement</p>
+            </div>
+            <div class="UnDeux">
+                <p class="Number" style="font-size: 60px; position: absolute;">2</p>
+                <img style="margin-top: 40px;" class="RondEco" src="../assets/RondEco.svg" alt="">
+                <img class="TraitVert" src="../assets/traitVert.svg" alt="">
+                <h4>Protection</h4>
+                <p style="text-align: center;">Nos peluches sont fabriqués à base de matières premières saines et sans
+                    danger</p>
+            </div>
+            <div class="UnDeux">
+                <p class="Number" style="font-size: 60px; position: absolute;">3</p>
+                <img style="margin-top: 40px;" class="RondEco" src="../assets/RondEco.svg" alt="">
+                <img class="TraitVert" src="../assets/traitVert.svg" alt="">
+                <h4>Contrôle Parental</h4>
+                <p style="text-align:  center;">Nos jeux sont crées avec un accès à un contrôle parental afin de limiter le
+                    temps d’écran sur smartphone ou tablette</p>
+            </div>
+            <div class="UnDeux">
+                <p class="Number" style="font-size: 60px; position: absolute;">4</p>
+                <img style="margin-top: 40px;" class="RondEco" src="../assets/RondEco.svg" alt="">
+                <img class="TraitVert" src="../assets/traitVert.svg" alt="">
+                <h4>Sécurité</h4>
+                <p style="text-align:  center;">Nous mettons en garde sur l’utilisation de nos jeux pour un enfant de - 6
+                    ans</p>
+            </div>
         </div>
     </div>
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 #Home {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 10%;
-    margin: 0px 500px;
+    padding-top: 3%;
+    /* margin: 0px 100px; */
 
 }
 
@@ -78,17 +122,72 @@ import { ref } from 'vue';
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 50px;
+    /* padding: 5p; */
+}
+
+#Home .Welcome {
+    font-family: 'Poppins', sans-serif;
+}
+
+#Home .TraitVert {
+
+    margin: 20px;
+    /* padding: 5p; */
+}
+
+#Home .BlockUnDeux {
+    margin: 0px 5%;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+#Home .UnDeux {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     padding: 50px;
+}
+
+#Home .Carrousel {
+    position: absolute;
+    z-index: 2;
+    width: 750px;
+}
+
+#Home .FondCarrousel {
+    /* position: absolute; */
+    z-index: 1;
+    width: 750px;
+}
+
+#Home .Collection {
+    display: flex;
+    align-items: center;
+}
+
+#Home .WhyImg {
+    width: 150px;
+
 }
 
 #Home .TextInBlockP {
     display: flex;
+    font-size: 18px;
+
 }
 
+#Home .TextInBlock {
+    width: 500px;
+
+}
 
 #Home .Block {
     display: flex;
 }
+
 #Home .OnBlock {
     display: flex;
 }
@@ -99,14 +198,14 @@ import { ref } from 'vue';
 }
 
 #Home .PointCercle {
-    width: 40vh;
+    width: 45vh;
     z-index: 1;
 
 }
 
 #Home .Panda {
     padding-left: 3%;
-    width: 40vh;
+    width: 50vh;
     z-index: 2;
     position: absolute;
 
@@ -114,55 +213,53 @@ import { ref } from 'vue';
 
 
 
-#Home .Discover {
-    /* font-size: 150px; */
-    margin: 50px;
-}
+
 
 #Home .AmisPrecieux {
     display: flex;
     align-items: center;
-    justify-content: center;
-
-    padding: 0px 300px;
+    /* justify-content: center; */
+    padding: 0px 7%;
 }
 
 #Home .Separation {
-    padding: 200px;
-    /* width: 100vh; */
-    background-repeat: repeat-x;
+    padding-bottom: 4%;
 }
 
 #Home .Line {
-    width: 100vh;
+    width: 70%;
     padding-top: 5%;
-    background-repeat: repeat;
+    position: absolute;
+    left: 0%;
+}
 
+#Home .LineBot {
+    width: 70%;
+    padding-top: 5%;
+    position: absolute;
+    right: 0%;
 }
 
 #Home .Decouvrir {
-    width: 800px;
-    height: 220px;
-    font-size: 80px;
-    /* padding: 1rem 3rem; */
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
     background: #60547C;
-    border: none;
     color: #fff;
     font-weight: bold;
     letter-spacing: 1px;
-    border-radius: 250px;
-    box-shadow: -2px 4px 16px #d6d6d6;
+    border-radius: 50px;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
-    border: 10px solid #121212;
+    border: 5px solid #121212;
     color: #fff;
     font-weight: bold;
     letter-spacing: 1px;
-    box-shadow: 10px 10px 0px #000000;
+    box-shadow: 5px 5px 0px #000000;
     transition: box-shadow 0.3s, border 0.2s;
 
 
@@ -171,19 +268,17 @@ import { ref } from 'vue';
 #Home .Decouvrir:hover {
     box-shadow: none;
     border: none;
+    background: pink;
+}
+
+#Home .Number:hover {
+    color: #8FD192;
 }
 
 
 @media screen and (max-width: 700px) {
-    #Header .Icon {
-        display: none;
-    }
-
-    #Header .logoPanda {
-        display: none;
-    }
-
-    #Header .nav--icon {
-        display: none;
-    }
-}</style>
+   #Home {
+    display:  none;
+   }
+}
+</style>
