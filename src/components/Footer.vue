@@ -21,7 +21,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 100px;
+    padding: 0px 100px;
+    padding-bottom: 100px;
 }
 
 #Footer .Line {
