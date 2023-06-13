@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+import { Splide, SplideSlide } from '@splidejs/vue-splide';
 
 </script>
 
@@ -9,7 +10,7 @@ import { ref } from 'vue';
             <div class="Discover">
                 <p class="Welcome" style="margin: 0px; font-size: 16px;">Bienvenue chez</p>
                 <h1 style="margin: 0px;" class="AmisTitle">Amis Précieux </h1>
-                <h2>Une gamme de peluches respectueuses de l’environnement et pour la protection animale !</h2>
+                <h2>Une gamme de peluches respectueuses de l’environnement qui lutte pour la protection animale !</h2>
                 <button class="Decouvrir" role="button">Découvrir </button>
             </div>
             <div class="Logo">
@@ -24,7 +25,7 @@ import { ref } from 'vue';
             <h2>Pourquoi choisir Amis Précieux ?</h2>
             <Div class="OnBlock">
                 <div class="Block">
-                    <img class="LogoInRond"  src="../assets/hand-pointer.svg" alt="">
+                    <img class="LogoInRond" src="../assets/hand-pointer.svg" alt="">
                     <img class="WhyImg" src="../assets/HeroImageSpot.svg" alt="">
                     <div class="TextInBlock">
                         <H3>Jeux Intéractifs</H3>
@@ -33,19 +34,20 @@ import { ref } from 'vue';
                     </div>
                 </div>
                 <div class="Block">
-                    <img class="LogoInRond" style="margin-top: 60px; margin-left: 25px;"  src="../assets/teddy.svg" alt="">
+                    <img class="LogoInRond" style="margin-top: 90px; margin-left: 25px;" src="../assets/teddy.svg" alt="">
 
                     <img class="WhyImg" src="../assets/HeroImageSpot.svg" alt="">
                     <div class="TextInBlock">
-                        <H3>Protection Animal</H3>
-                        <p class="TextInBlockP">Une partie de vos dépenses sera reversés à des associations de lutte pour la protection animale</p>
+                        <H3>Protection Animale</H3>
+                        <p class="TextInBlockP">Une partie de vos dépenses sera reversés à des associations de lutte pour la
+                            protection animale</p>
                     </div>
 
                 </div>
             </Div>
             <Div class="OnBlock">
                 <div class="Block">
-                    <img class="LogoInRond"  src="../assets/ballofthread.svg" alt="">
+                    <img class="LogoInRond" src="../assets/ballofthread.svg" alt="">
 
                     <img class="WhyImg" src="../assets/HeroImageSpot.svg" alt="">
                     <div class="TextInBlock">
@@ -55,7 +57,7 @@ import { ref } from 'vue';
                     </div>
                 </div>
                 <div class="Block">
-                    <img class="LogoInRond" style="margin-top: 30px; margin-left: 10px;"  src="../assets/palette.svg" alt="">
+                    <img class="LogoInRond" style="margin-top: 60px; margin-left: 5px;" src="../assets/palette.svg" alt="">
 
                     <img class="WhyImg" src="../assets/HeroImageSpot.svg" alt="">
                     <div class="TextInBlock">
@@ -66,10 +68,18 @@ import { ref } from 'vue';
                 </div>
             </Div>
         </div>
-        <div class="Collection">
-            <img class="FondCarrousel" src="../assets/FondAcheter.svg" alt="">
-            <img class="Carrousel" src="../assets/Collection1.svg" alt="">
-        </div>
+        <!-- <div class="Collection"> -->
+            <Splide :options="{ rewind: true }" aria-labelledby="My Favorite Images">
+                <SplideSlide>
+                    <img src="../assets/LogoMyDigitalStartUp3.svg" alt="Sample 1">
+                </SplideSlide>
+                <SplideSlide>
+                    <img src="../assets/LogoMyDigitalStartUp3.svg" alt="Sample 2">
+                </SplideSlide>
+            </Splide>
+            <!-- <img class="FondCarrousel" src="../assets/FondAcheter.svg" alt="">
+            <img class="Carrousel" src="../assets/Collection1.svg" alt=""> -->
+        <!-- </div> -->
         <H3>Des peluches saines pour votre enfant</H3>
         <div class="Separation">
             <img class="LineBot" src="../assets/LineDash.svg" alt="">
@@ -79,7 +89,9 @@ import { ref } from 'vue';
                 <p class="Number" style="font-size: 60px; position: absolute;">1</p>
                 <img style="margin-top: 40px;" class="RondEco" src="../assets/RondEco.svg" alt="">
                 <img class="TraitVert" src="../assets/traitVert.svg" alt="">
-                <h4>Écologique</h4>
+                <div class="h4-wrapper">
+                    <h4>Écologique</h4>
+                </div>
                 <p style="text-align:  center;">Notre combat ? Fabriquer des peluches Made In France respectueuse de
                     l’environnement</p>
             </div>
@@ -87,22 +99,32 @@ import { ref } from 'vue';
                 <p class="Number" style="font-size: 60px; position: absolute;">2</p>
                 <img style="margin-top: 40px;" class="RondEco" src="../assets/RondEco.svg" alt="">
                 <img class="TraitVert" src="../assets/traitVert.svg" alt="">
-                <h4>Protection</h4>
-                <p style="text-align: center;">Nos peluches sont fabriquées à base de matières premières saines et sans danger</p>
+                <div class="h4-wrapper">
+                    <h4>Protection</h4>
+                </div>
+                <p style="text-align: center;">Nos peluches sont fabriquées à base de matières premières saines et sans
+                    danger</p>
             </div>
             <div class="UnDeux">
                 <p class="Number" style="font-size: 60px; position: absolute;">3</p>
                 <img style="margin-top: 40px;" class="RondEco" src="../assets/RondEco.svg" alt="">
                 <img class="TraitVert" src="../assets/traitVert.svg" alt="">
-                <h4>Contrôle Parental</h4>
-                <p style="text-align:  center;">Nos jeux sont créés avec un accès à un contrôle parental afin de limiter le temps d’écran sur smartphone ou tablette</p>
+                <div class="h4-wrapper">
+                    <h4>Contrôle Parental</h4>
+                </div>
+                <p style="text-align:  center;">Nos jeux sont créés avec un accès à un contrôle parental afin de limiter le
+                    temps d’écran sur smartphone ou tablette</p>
             </div>
             <div class="UnDeux">
                 <p class="Number" style="font-size: 60px; position: absolute;">4</p>
                 <img style="margin-top: 40px;" class="RondEco" src="../assets/RondEco.svg" alt="">
                 <img class="TraitVert" src="../assets/traitVert.svg" alt="">
-                <h4>Sécurité</h4>
-                <p style="text-align:  center;">Chaque jour, une peluche achetée représente un pas supplémentaire pour lutter pour la cause animale. Luttons ensemble pour préserver les espèces rares, protéger l’environnement et sensibiliser les nouvelles générations</p>
+                <div class="h4-wrapper">
+                    <h4>Sécurité</h4>
+                </div>
+                <p style="text-align:  center;">Chaque jour, une peluche achetée représente un pas supplémentaire pour
+                    lutter pour la cause animale. Luttons ensemble pour préserver les espèces rares et protéger
+                    l'environement </p>
             </div>
         </div>
     </div>
@@ -111,6 +133,12 @@ import { ref } from 'vue';
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+
+#Home .h4-wrapper {
+    display: block;
+    align-items: center;
+}
+
 #Home {
     display: flex;
     align-items: center;
@@ -118,7 +146,7 @@ import { ref } from 'vue';
     flex-direction: column;
     padding-top: 3%;
     /* margin: 0px 100px; */
- 
+
 }
 
 #Home .LogoInRond {
@@ -126,9 +154,9 @@ import { ref } from 'vue';
     align-items: center;
     flex-direction: column;
     position: absolute;
-    margin-top: 45px;
+    margin-top: 80px;
     margin-left: 20px;
-    }
+}
 
 #Home .Why {
     display: flex;
@@ -162,7 +190,7 @@ import { ref } from 'vue';
     padding: 0px 50px;
     width: 20%;
     height: 600px;
-    
+
 
 }
 
@@ -191,11 +219,12 @@ import { ref } from 'vue';
 #Home .TextInBlockP {
     display: flex;
     font-size: 18px;
+    width: 200px;
 
 }
 
 #Home .TextInBlock {
-    width: 500px;
+    width: 300px;
 
 }
 
@@ -292,8 +321,7 @@ import { ref } from 'vue';
 
 
 @media screen and (max-width: 700px) {
-   #Home {
-    display:  none;
-   }
-}
-</style>
+    #Home {
+        display: none;
+    }
+}</style>
