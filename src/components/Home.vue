@@ -70,7 +70,7 @@ import { ref } from 'vue';
             <img class="FondCarrousel" src="../assets/FondAcheter.svg" alt="">
             <img class="Carrousel" src="../assets/Collection1.svg" alt="">
         </div>
-        <H3>Des peluches saines pour votre enfant</H3>
+        <H3 style="display: flex; flex-wrap: wrap; text-align: center;">Des peluches saines pour votre enfant</H3>
         <div class="Separation">
             <img class="LineBot" src="../assets/LineDash.svg" alt="">
         </div>
@@ -94,7 +94,7 @@ import { ref } from 'vue';
                 <p class="Number" style="font-size: 60px; position: absolute;">3</p>
                 <img style="margin-top: 40px;" class="RondEco" src="../assets/RondEco.svg" alt="">
                 <img class="TraitVert" src="../assets/traitVert.svg" alt="">
-                <h4>Contrôle Parental</h4>
+                <h4>Contrôle</h4>
                 <p style="text-align:  center;">Nos jeux sont créés avec un accès à un contrôle parental afin de limiter le temps d’écran sur smartphone ou tablette</p>
             </div>
             <div class="UnDeux">
@@ -190,12 +190,13 @@ import { ref } from 'vue';
 
 #Home .TextInBlockP {
     display: flex;
+    text-align: center;
     font-size: 18px;
 
 }
 
 #Home .TextInBlock {
-    width: 500px;
+    width: 350px;
 
 }
 
@@ -291,9 +292,74 @@ import { ref } from 'vue';
 }
 
 
-@media screen and (max-width: 700px) {
-   #Home {
-    display:  none;
-   }
+@media screen and (max-width: 1000px) {
+    #Home .TextInBlock {
+    width: 250px;
 }
+#Home .BlockUnDeux {
+    margin: 0px 5%;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+#Home .AmisPrecieux {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* padding: 0px 7%; */
+    flex-wrap: wrap;
+}
+#Home .Logo {
+    display: none;
+}
+#Home .Collection {
+    width: 100%;
+}
+#Home .Carrousel {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+
+}
+#Home .FondCarrousel {
+    /* position: absolute; */
+    z-index: 1;
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 810px) {
+    #Home .OnBlock {
+    display: flex;
+    align-items: center;
+    /* margin: 50px; */
+  justify-content: center;
+    flex-wrap: wrap;
+}
+#Home .AmisTitle{
+    font-size: 40px;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 20px;
+}
+#Home .TextInBlockP {
+    display: flex;
+    text-align: start;
+
+    font-size: 12px;
+    flex-wrap: wrap;
+}
+#Home .WhyImg {
+    width: 120px;
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+}
+
 </style>

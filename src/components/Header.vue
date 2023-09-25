@@ -50,6 +50,7 @@ const state = ref(false);
 }
 .Header .logoPanda{
     height: 10vh;
+    padding-left: 75px;
 }
 .Header .Icon{
 /* height: 5vh; */
@@ -68,25 +69,17 @@ padding-right: 100px;
     align-items: flex-end;
     justify-content: end;
 }
-/* .Header .menu--burger{
-    height: 100vh;
-    width: 100%;
-    left: 100%;
-    background: #D2EDD3;
-    position:fixed ;
-    transition: 0.3s;
-} */
-/* .Header .open{
-    left: 0%;
-} */
-/* .Header .burger-open{
-    z-index: 2;
-    background: #D2EDD3;
- } */
-/* .Header .links{
-    display: none;
-} */
+@media screen and (max-width: 810px) {
 
+    .Header .Icon{
+/* height: 5vh; */
+padding-right: 50px;
+}
+.Header .logoPanda{
+    height: 10vh;
+    padding-left: 25px;
+}
+}
 
 
 

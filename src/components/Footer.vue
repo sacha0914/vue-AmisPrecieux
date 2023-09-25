@@ -3,10 +3,10 @@
 <template>
     <div id="Footer">
         <div class="Avis">
-            <img style="margin-left: 35px;" src="../assets/Avis1.svg" alt="">
+            <img class="ImgAvis1"  src="../assets/Avis1.svg" alt="">
             <p  style="text-align: center;margin: 0px 100px; font-size: 18px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui eum ratione repudiandae culpa maxime, voluptatibus eius earum voluptatem molestiae unde non quam voluptas cum explicabo! Vero quae quam eius delectus!</p>
-            <img src="../assets/Avis2.svg" alt="">
-            <p  style="text-align: center;margin: 0px 100px; font-size: 18px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui eum ratione repudiandae culpa maxime, voluptatibus eius earum voluptatem molestiae unde non quam voluptas cum explicabo! Vero quae quam eius delectus!</p>
+            <img class="Ena" src="../assets/Avis2.svg" alt="">
+            <p class="Ena" style="text-align: center;margin: 0px 100px; font-size: 18px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui eum ratione repudiandae culpa maxime, voluptatibus eius earum voluptatem molestiae unde non quam voluptas cum explicabo! Vero quae quam eius delectus!</p>
 
         </div>
         <div>
@@ -40,6 +40,7 @@
     background-color:  #D2EDD3;
     padding: 40px;
     align-items: center;
+    margin-top: 100px;
     /* margin: 100px 0px;
     width: 100%; */
 
@@ -50,6 +51,30 @@
     margin: 100px 0px;
     width: 100%;
 
+}
+#Footer .ImgAvis1 {
+    margin-left: 150px;
+}
+
+@media screen and (max-width: 810px) {
+#Footer .Ena{
+    display: none;
+}
+#Footer .Avis {
+    display: flex;
+    width: 100%;
+    background-color:  #D2EDD3;
+    /* padding: 40px; */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin: 100px 0px;
+    width: 100%; */
+
+}
+#Footer .ImgAvis1 {
+    margin: 5px;
+}
 }
 
 </style>
