@@ -25,7 +25,8 @@ const state = ref(false);
 
     <!-- menu dekstop -->
     <div class="nav--icon">
-    <font-awesome-icon class="Icon" icon="fa-solid fa-cart-shopping" size="2xl" style="color: #000000;" />
+        <a href="../../game/game.html">    <font-awesome-icon class="Icon" icon="fa-solid fa-cart-shopping" size="2xl" style="color: #000000;" />
+</a>
 
     <font-awesome-icon class="Icon" icon="fa-solid fa-user" size="2xl" style="color: #000000;"/> 
     </div>  
