@@ -1,9 +1,5 @@
 <script setup>
-import { ref } from 'vue';
-
-const state = ref(false);
-
-
+import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 
 </script>
 
@@ -11,31 +7,18 @@ const state = ref(false);
 <div class="Header">
     <div class="logo">
         <img class="logoPanda" src="../assets/LogoMyDigitalStartUp3.svg" alt="">
-    </div>
-    <!-- menu mobile
-    <div class="burger" @click="state = !state" :class="{'burger-open' : state}" >
-        <div class="trait"></div>
-        <div class="trait"></div>
-        <div class="trait"></div>
-    </div>
-    <div class="menu--burger" :class="{'open' : state}"  >
-    
-    </div> -->
-    <!-- menu mobile -->
 
-    <!-- menu dekstop -->
+    </div>
+
+
     <div class="nav--icon">
-        <a href="../../game/game.html">    <font-awesome-icon class="Icon" icon="fa-solid fa-cart-shopping" size="2xl" style="color: #000000;" />
-</a>
+
+        <font-awesome-icon class="Icon" icon="fa-solid fa-cart-shopping" size="2xl" style="color: #000000;" />
+      <router-view />
+
 
     <font-awesome-icon class="Icon" icon="fa-solid fa-user" size="2xl" style="color: #000000;"/> 
     </div>  
-    <!-- <ul class="links">
-        <li v-for="(link, index) in links" :key="index">{{ link.name }}</li>
-    </ul> -->
-    <!-- menu dekstop -->
-
-
 
 </div>
 </template>

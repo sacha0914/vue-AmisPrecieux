@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import './assets/main.css'
+import router from './router'
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
 
@@ -16,17 +17,10 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 /* add icons to the library */
 library.add(faUserSecret, faShoppingCart, faUser,faInstagram)
 
-const router = createRouter({
-    history: createWebHistory(),
-    routes: [
-      // Définissez vos routes ici
-    ],
-  });
 
-  createApp(App)
-  .use(router) // Utilisez le routeur
-  .mount('#app');
+const app = createApp(App)
 
-createApp(App)
-    .component('font-awesome-icon', FontAwesomeIcon)
-    .mount('#app')
+app.use(router)
+
+app.mount('#app') 
+
