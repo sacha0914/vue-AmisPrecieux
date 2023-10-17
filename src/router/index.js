@@ -1,20 +1,15 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import Game from '../game'
+import { createRouter, createWebHistory } from 'vue-router'
+import SinglePage from "@/components/SinglePage.vue";
 
 const router = createRouter({
-    history: createWebHistory(),
-    routes: [
-      {
-        path: '/game',
-        component: Game, // Importez votre composant
-      },
-      {
-        path: '/about',
-        component: About,
-      },
-      // Ajoutez d'autres routes ici
-    ],
-  });
-  
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: SinglePage
+    }
+  ]
+})
 
-  export default router;
+export default router

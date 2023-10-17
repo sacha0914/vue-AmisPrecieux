@@ -118,7 +118,7 @@ import { ref } from 'vue';
     flex-direction: column;
     padding-top: 3%;
     /* margin: 0px 100px; */
- 
+
 }
 
 #Home .LogoInRond {
@@ -162,7 +162,7 @@ import { ref } from 'vue';
     padding: 0px 50px;
     width: 20%;
     height: 600px;
-    
+
 
 }
 

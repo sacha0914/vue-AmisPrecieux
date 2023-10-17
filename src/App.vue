@@ -1,16 +1,12 @@
-<script setup>
-import Header from './components/Header.vue'
-import Home from './components/Home.vue'
-import Footer from './components/Footer.vue'
-
-</script>
 
 <template>
-  <Header />
-  <Home/>
-  <Footer/>
-  </template>
+  <div id="app">
+    <router-view></router-view>
+  </div>
+</template>
 
-<style scoped>
-
-</style>
+<script>
+export default {
+  name: 'App',
+};
+</script>
