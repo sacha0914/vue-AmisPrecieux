@@ -7,11 +7,15 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 <div class="Header">
     <div class="logo">
         <img class="logoPanda" src="../assets/LogoMyDigitalStartUp3.svg" alt="">
+
     </div>
 
+
     <div class="nav--icon">
+
         <font-awesome-icon class="Icon" icon="fa-solid fa-cart-shopping" size="2xl" style="color: #000000;" />
       <router-view />
+
 
     <font-awesome-icon class="Icon" icon="fa-solid fa-user" size="2xl" style="color: #000000;"/> 
     </div>  

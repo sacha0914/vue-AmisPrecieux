@@ -1,3 +1,4 @@
+
 import { createRouter, createWebHistory } from 'vue-router'
 import SinglePage from "@/components/SinglePage.vue";
 
@@ -13,3 +14,4 @@ const router = createRouter({
 })
 
 export default router
+

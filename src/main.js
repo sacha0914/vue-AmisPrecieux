@@ -12,11 +12,15 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faShoppingCart, faUser, faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
+
+  
 /* add icons to the library */
 library.add(faUserSecret, faShoppingCart, faUser,faInstagram)
+
 
 const app = createApp(App)
 
 app.use(router)
 
 app.mount('#app') 
+
